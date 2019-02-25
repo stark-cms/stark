@@ -53,7 +53,7 @@ discussion.
 ```console
 ~/$ cd stark
 ~/stark (master)/$ pienv shell
-(stark) ~/stark (master)/$ git fetch uptream 
+(stark) ~/stark (master)/$ git fetch upstream 
 (stark) ~/stark (master)/$ git rebase upstream master
 (stark) ~/stark (master)/$ git checkout -b [issue's number]
 ```
