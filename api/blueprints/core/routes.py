@@ -1,4 +1,4 @@
-from blueprints.core.bp import bp
+from api.blueprints.core.bp import bp
 
 
 @bp.route('/')

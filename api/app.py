@@ -10,7 +10,7 @@ def create_app() -> Flask:
 
     # Set up of Blueprints
 
-    from blueprints.core import bp as bp_core
+    from api.blueprints.core import bp as bp_core
     bp_core.config(app, url_prefix='')
 
     return app
