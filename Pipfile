@@ -10,7 +10,6 @@ pytest = "*"
 [packages]
 flask = "*"
 python-dotenv = "*"
-pytest-cov = "*"
 
 [requires]
 python_version = "3.7"
