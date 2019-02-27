@@ -2,6 +2,11 @@
 
 > The north remembers
 
+
+[![Build Status](https://travis-ci.org/stark-cms/stark.svg?branch=master)](https://travis-ci.org/stark-cms/stark)
+[![codecov](https://codecov.io/gh/stark-cms/stark/branch/master/graph/badge.svg)](https://codecov.io/gh/stark-cms/stark)
+
+
 Stark is the Open Source Headless CMS we've been missing in python.
 
 ## About
