@@ -1,24 +1,19 @@
 from flask import Flask
 
-import api.settings as default_settings
+from .blueprints.core import bp as bp_core
 
 
-def create_app(settings=None) -> Flask:
+def create_app() -> Flask:
     """
     Create and set up an application Flask
     :return: The application Flask itself
     """
 
-    if settings is None:
-        settings = default_settings
-
-    app = Flask(__name__, template_folder='templates')
-    app.config.from_object(settings)
-    app.debug = app.config['DEBUG']
+    app = Flask(__name__)
+    app.config['SECRET_KEY'] = 'My_Hiper_Top_Secret_Key'
 
     # Set up of Blueprints
 
-    from api.blueprints.core import bp as bp_core
     bp_core.config(app, url_prefix='')
 
     return app
