@@ -6,9 +6,12 @@ verify_ssl = true
 [dev-packages]
 pytest-flask = "*"
 pytest-sugar = "*"
+flake8 = "*"
+pytest-cov = "*"
 
 [packages]
 flask = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"
