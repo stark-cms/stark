@@ -1,5 +1,5 @@
 from flask import Flask
-
+from api.settings import STARK_SECRET_KEY
 
 def create_app():
     """
@@ -7,7 +7,7 @@ def create_app():
     :return: The application Flask itself
     """
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'My_Top_Secert_Key'
+    app.config['SECRET_KEY'] = STARK_SECRET_KEY
 
     # Blueprint
 

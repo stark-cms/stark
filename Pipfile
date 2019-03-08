@@ -12,6 +12,11 @@ pytest-cov = "*"
 [packages]
 flask = "*"
 python-dotenv = "*"
+decouple = "*"
+python-decouple = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
