@@ -2,7 +2,7 @@
 name = "stark"
 version = "0.1.0"
 description = ""
-authors = ["João Lugão <jlugao@flowcap.net>"]
+authors = ["João Lugão <jlugao@flowcap.net>", "Riverfount <vicente.marcal@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
