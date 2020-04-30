@@ -1,7 +1,10 @@
   
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
+from simple_settings import settings
 
+
+world = settings.WORLD
 
 
 app = FastAPI(
@@ -10,8 +13,8 @@ app = FastAPI(
 
 @app.get('/')
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": world}
 
 @app.get('/test/')
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": world}
