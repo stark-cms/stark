@@ -1,3 +1,12 @@
+# VARIABLE ARGUMENTS
+settings=settings.base
+
+ifdef SIMPLE_SETTINGS
+	settings=$(SIMPLE_SETTINGS)
+else
+	export SIMPLE_SETTINGS=$(settings)
+endif
+
 .PHONY: requirements run build up
 
 
