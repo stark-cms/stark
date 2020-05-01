@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+
+  db: # service name
+    image: postgres:latest # describes image the db service will use.
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./postgres:/var/lib/postgresql/data
+
+  backend:
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://docker:docker@db:5432/stark
+    build:
+      context: ./
+      dockerfile: backend.dockerfile
+    command: poetry run uvicorn main:app --reload --host 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+      - "8009:8000"
+

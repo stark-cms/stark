@@ -1,3 +1,5 @@
+## DEPRECATED -- Must add new instructions
+
 ## If you want to contribute you need to do:
 
 Make sure that the Python >= 3.7.2 was installed.
